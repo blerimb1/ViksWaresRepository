@@ -53,9 +53,9 @@ namespace ViksWares.Services
                      
         }
 
-        public bool IsSpecialItem(string name)
+        public static bool IsSpecialItem(string name)
         {
-            bool result = name.Equals("Aged Parmigiano") ? true : name.ToLower().Contains("tickets") ? true : (name == "Saffron Powder") ? true : name.ToLower().Contains("refrigerated")? true : false;
+            bool result = name.Equals("Aged Parmigiano") || (name.ToLower().Contains("tickets") || ((name == "Saffron Powder") || (name.ToLower().Contains("refrigerated"))));
             return result;
         }
     }
