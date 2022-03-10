@@ -32,8 +32,7 @@ namespace ViksWares.Services
                     }
                 }
             }
-
-            if (item.SellBy < 0)
+            else
             {
                 item.Value = 0;
             }

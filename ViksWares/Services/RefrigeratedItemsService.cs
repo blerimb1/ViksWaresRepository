@@ -16,9 +16,7 @@ namespace ViksWares.Services
                     item.Value -= 2;
                 }
             }
-
-
-            if (item.SellBy < 0)
+            else
             {
                 if (item.Value > 3)
                 {

@@ -36,7 +36,7 @@ namespace ViksWares.Services
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Concert tickets to Talkins Festival", 15, 20));
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Concert tickets to Talkins Festival", 10, 49));
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Concert tickets to Talkins Festival", 5, 49));
-            _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Refrigerated milk", 3, 7));
+            _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Refrigerated milk", 3, 6));
 
 
             var items = _itemsInventoryRepository.GetItemInventory();
