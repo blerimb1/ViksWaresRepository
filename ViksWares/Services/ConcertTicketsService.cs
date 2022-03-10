@@ -9,7 +9,7 @@ namespace ViksWares.Services
         
         public void UpdateItemValues(Item item)
         {
-            if (item.SellBy > 0)
+            if (item.SellBy >= 0)
             {
                 if (item.Value < 50)
                 {

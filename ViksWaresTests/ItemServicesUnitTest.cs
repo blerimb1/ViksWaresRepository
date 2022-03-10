@@ -16,7 +16,7 @@ namespace ViksWaresTests
         {
             otherItem = new Item {Name = "Shoe Laces", SellBy = 10, Value = 20 };
             agedParmigiano = new Item { Name = "Aged Parmigiano", SellBy = 2, Value = 0 };
-            concertTicket = new Item { Name = "Concert Tickets", SellBy = 10, Value = 20 };
+            concertTicket = new Item { Name = "Concert Tickets", SellBy = 0, Value = 20 };
             refrigeratedItem = new Item { Name = "Refrigerated pizza", SellBy = 4, Value = 10 };
         }
 
@@ -33,7 +33,7 @@ namespace ViksWaresTests
         {
             var concertTicketsService = new ConcertTicketsService();
             concertTicketsService.UpdateItemValues(concertTicket);
-            Assert.AreEqual(22, concertTicket.Value);
+            Assert.AreEqual(23, concertTicket.Value);
         }
 
         [Test]
