@@ -20,6 +20,7 @@ namespace ViksWaresTests
         [Test]
         public void TestItemsInventoryRepository()
         {
+
             itemsInventoryRepository.AddStock(itemFactory.GetItem("Shoe Laces", 10, 20));           
             var items = itemsInventoryRepository.GetItemInventory();
             

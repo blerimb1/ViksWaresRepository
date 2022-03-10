@@ -37,28 +37,23 @@ namespace ViksWares.Services
                 {
                     _agedParmigianoService.UpdateItemValues(item);
                 }
-
-                if (item.Name.ToLower().Contains("tickets"))
+                else if (item.Name.ToLower().Contains("tickets"))
                 {
                     _concertTicketsService.UpdateItemValues(item);
                 }
-
-                if (item.Name.ToLower().Contains("refrigerated"))
+                else if (item.Name.ToLower().Contains("refrigerated"))
                 {
                     _refrigeratedItemsService.UpdateItemValues(item);
                 }
-
-                if (!isSpecialItem(item.Name))
+                else if (!IsSpecialItem(item.Name)) 
                 {
                     _otherItemService.UpdateItemValues(item);
                 }
-
             }
-
                      
         }
 
-        public bool isSpecialItem(string name)
+        public bool IsSpecialItem(string name)
         {
             bool result = name.Equals("Aged Parmigiano") ? true : name.ToLower().Contains("tickets") ? true : (name == "Saffron Powder") ? true : name.ToLower().Contains("refrigerated")? true : false;
             return result;
