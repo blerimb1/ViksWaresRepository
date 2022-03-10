@@ -32,12 +32,12 @@ namespace ViksWares.Services
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Aged Parmigiano", 2, 0));
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Book of Resolutions", 5, 7));
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Saffron Powder", 0, 80));
-            _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Saffron Powder", 0, 80));
+            _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Saffron Powder", -1, 80));
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Concert tickets to Talkins Festival", 15, 20));
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Concert tickets to Talkins Festival", 10, 49));
             _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Concert tickets to Talkins Festival", 5, 49));
-            _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Refrigerated milk", 3, 6));
-            _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Refrigerated milk", 3, 6));
+            _itemsInventoryRepository.AddStock(_itemfactory.GetItem("Refrigerated milk", 3, 7));
+
 
             var items = _itemsInventoryRepository.GetItemInventory();
 
@@ -61,7 +61,7 @@ namespace ViksWares.Services
             return Host.CreateDefaultBuilder(args)
                 .ConfigureServices(services =>
                 {
-                    services.AddSingleton<AppService>();
+                    services.AddTransient<AppService>();
                     services.AddTransient<IItemsInventoryRepository, ItemsInventoryRepository>();
                     services.AddTransient<IItemFactory, ItemFactory>();
                     services.AddTransient<IViksWaresService, ViksWaresService>();
