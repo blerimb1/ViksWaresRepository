@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViksWares", "ViksWares\ViksWares.csproj", "{078DECC5-F974-4200-AE28-1A1118CD2E03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViksWaresTests", "ViksWaresTests\ViksWaresTests.csproj", "{DC5D244B-CBF7-4106-9E5C-117199DB5CAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078DECC5-F974-4200-AE28-1A1118CD2E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078DECC5-F974-4200-AE28-1A1118CD2E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078DECC5-F974-4200-AE28-1A1118CD2E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078DECC5-F974-4200-AE28-1A1118CD2E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5D244B-CBF7-4106-9E5C-117199DB5CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5D244B-CBF7-4106-9E5C-117199DB5CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5D244B-CBF7-4106-9E5C-117199DB5CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5D244B-CBF7-4106-9E5C-117199DB5CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7636B060-2935-494F-8591-5997F1E053D9}
+	EndGlobalSection
+EndGlobal
