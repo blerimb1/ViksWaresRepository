@@ -71,19 +71,14 @@ namespace ViksWares.Services
                     services.AddTransient<RefrigeratedItemsService>();
                     services.AddTransient((Func<IServiceProvider, ServiceResolver>)(serviceProvider => name =>
                     {
-                        switch (name)
+                        return name switch
                         {
-                            case "AgedParmigiano":
-                                return serviceProvider.GetService<AgedParmigianoService>();
-                            case "ConcertTickets":
-                                return serviceProvider.GetService<ConcertTicketsService>();
-                            case "RefrigeratedItems":
-                                return serviceProvider.GetService<RefrigeratedItemsService>();
-                            case "OtherItem":
-                                return serviceProvider.GetService<OtherItemService>();
-                            default:
-                                throw new KeyNotFoundException();
-                        }
+                            "AgedParmigiano" => serviceProvider.GetService<AgedParmigianoService>(),
+                            "ConcertTickets" => serviceProvider.GetService<ConcertTicketsService>(),
+                            "RefrigeratedItems" => serviceProvider.GetService<RefrigeratedItemsService>(),
+                            "OtherItem" => serviceProvider.GetService<OtherItemService>(),
+                            _ => throw new KeyNotFoundException(),
+                        };
                     }));
                 });
         }

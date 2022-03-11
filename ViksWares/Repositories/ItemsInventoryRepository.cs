@@ -9,7 +9,7 @@ namespace ViksWares.Repositories
 
     public class ItemsInventoryRepository : IItemsInventoryRepository
     {
-        private List<Item> itemInventory = Setup();
+        private readonly List<Item> itemInventory = Setup();
 
         private static List<Item> Setup()
         {

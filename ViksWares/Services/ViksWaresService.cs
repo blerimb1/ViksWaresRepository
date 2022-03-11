@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using ViksWares.Models;
 using ViksWares.Interfaces;
-
-using static ViksWares.Program;
 using static ViksWares.Services.AppService;
 
 namespace ViksWares.Services
